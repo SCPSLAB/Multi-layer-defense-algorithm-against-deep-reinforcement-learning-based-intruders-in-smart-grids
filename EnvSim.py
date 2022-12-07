@@ -1,15 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
 
 
 import random
 import each_device_env
 import numpy as np
 
-
-# In[9]:
 
 
 class Environment:
@@ -115,9 +112,6 @@ def get_random_env1():
                            consumption_period, penalty, incentive)   
 
 
-# In[11]:
-
-
 
 
 if __name__ == '__main__':
@@ -206,9 +200,6 @@ if __name__ == '__main__':
         a = env.action_space_sample()
         ob, r, done, _ = env.step(a)
         print(f'action: {a}, reward: {r}, obs: {ob}')
-
-
-# In[15]:
 
 
 class GymDQNLearner:
